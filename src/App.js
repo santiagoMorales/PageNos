@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './Components/NavBar'
 import About from './Components/About'
 import Video from './Components/Video'
-
+import Services from './Components/Services'
 
 function App() {
   return (
@@ -19,9 +19,13 @@ function App() {
     <section className="tree">
         <Video/>
     </section>
-    <h1>oro</h1>
+    <section className="four pb-3">
+        <Services/>
+    </section>
+
+    <h1>aasdgfgh</h1>
     </div>
-  );
+  );  
 }
 
 export default App;

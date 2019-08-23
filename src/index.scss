@@ -1,3 +1,4 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -43,7 +44,7 @@ visibility: visible;
   background-color: transparent !important;
 }
 .btn{
-  background-color: rgb(96, 26, 189);
+  background-color: rgb(13, 10, 180);
   color: white;
   padding: 2px 15px;
   text-align: center;
@@ -79,3 +80,36 @@ visibility: visible;
  
     background-color: #000000;
 }
+
+.video{
+  background-color: transparent;
+  border: #000000
+  
+}
+.videoSpan{
+  color: white;
+  background-color: #000000;
+}
+.vid{
+  background-color: #000000; 
+}
+
+.four{
+
+  background-color: #f7f7f7
+}
+.parrafo{
+  width: 36pc;
+  font-size: 14px;
+  color: #585858;
+}
+
+.pCard{
+  font-size: 14px;
+  color: #585858;
+
+}
+.card{
+  border-bottom: groove 5px #fe214f;
+ 
+} 
