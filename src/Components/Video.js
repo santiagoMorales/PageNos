@@ -15,11 +15,11 @@ function Video (){
 
     return(
         <div className="container p-5 mt-2 mb-5 ">
-          <div className="row p-5">
+          <div className="row d-flex align-items-center">
             <div className="col p-5">
             </div>
             <div className="col text-center col-sm-10 col-lg-6 col-md-6 col-xs">
-                <ModalVideo channel='youtube' isOpen={open} videoId='mmKAn1MeB04' onClose={() => isOpen(false) } />
+                <ModalVideo channel='youtube' isOpen={open} videoId='j3AJGXscdLI' onClose={() => isOpen(false) } />
                  <button className="video" onClick={openModal} ><FontAwesomeIcon icon={faPlayCircle} color="#FF0923 " size="5x"/></button>
                  <h2 className=" vid text-center text-white mt-2 d-flex justify-content-center">Unique. Powerful. Creative.</h2> 
                     <blockquote className= "blockquote text-center ">
