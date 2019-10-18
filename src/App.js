@@ -14,23 +14,28 @@ import Powerful from './Components/Powerful'
 import Creative from './Components/Creatuve'
 import Blog from './Components/blog/Blog'
 import Carousel from './Components/carousel/Carousel'
+import PeopleSay from './Components/wps/PeopleSay'
+import Form from './Components/form/Form'
+import Contact from './Components/contact/Contact'
+import Footer from './Components/footer/Footer'
+
 
 function App() {
     return (
         <div>
-            <section className="imagen">
+            <section className="imagen" id="home">
                 <NavBar />
                 <div className="button d-flex justify-content-center">
                     <button type="button" className="but btn btn-outline-dark rounded-circle ">&darr;</button>
                 </div>
             </section>
-            <section>
+            <section id="about">
                 <About />
             </section>
             <section className="tree">
                 <Video />
             </section>
-            <section className="four pb-3">
+            <section className="four pb-3" id="services">
                 <Services />
             </section>
             <section>
@@ -39,7 +44,7 @@ function App() {
             <section className="four">
                 <ListButton />
             </section>
-            <section>
+            <section id="work">
                 <Portfolio />
             </section>
             <section>
@@ -58,18 +63,29 @@ function App() {
             <section className="fond">
                 <Powerful />
             </section>
-            <section className="secCreative">
+            <section className="secCreative" id="team">
                 <Creative />
             </section>
-            <section className="blog">
+            <section className="blog" id="blog">
                 <Blog />
             </section>
-            <section className="carousel">
+            <section className="carousel" id="clients">
                 <Carousel />
             </section>
-            <h1>aasdgfgh</h1>
-            <span className="linea"></span>
+            <section className="pb-5" >
+                <PeopleSay />
+            </section >
+            <section className="form" id="contact">
+                <Form />
+            </section>
+            <section className="contact">
+                <Contact />
+            </section>
+            <footer className="footer" >
+                <Footer />
+            </footer>
         </div>
+
     );
 }
 

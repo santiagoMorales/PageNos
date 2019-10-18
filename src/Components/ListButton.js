@@ -4,8 +4,8 @@ import Botones from './Botones'
 function ListButton() {
 
     return (
-        <div className="container m-0 ">
-            <div className="row rc">
+        <div className="container-fluid ">
+            <div className="row ">
                 <div className="col col-sm-12 col-md-6 col-xs-12  ">
                     <Botones />
                 </div>
