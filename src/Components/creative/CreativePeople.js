@@ -1,8 +1,8 @@
 import React from 'react'
 import IconosSocial from './IconsSocial'
 
-const CreativePeople = ({ image, name, job }) => (
-    <div className="col col-sm-6 col-md-3 col-xs-12">
+const CreativePeople = ({ image, name, job, timeAnimation }) => (
+    <div className="col-sm-6 col-md-6 col-lg-3 col-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration={timeAnimation}>
         <div className="colum-inner">
             <figure className="figureC">
                 <img className="creativeIm" src={image} alt="img11" />

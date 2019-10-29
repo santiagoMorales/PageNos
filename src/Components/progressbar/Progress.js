@@ -6,9 +6,9 @@ const Progress = () => {
 
     return (
 
-        <div className="container mt-5 ">
-            <div className="row mt-5 mr-5 pr-5">
-                <div className="col mt-5 pt-5 col-sm-12 col-md-6 col-xs-12">
+        <div className="container cont-progress" data-aos="zoom-in">
+            <div className="row  pr-5 pb-5">
+                <div className=" mt-5 pt-5 col-md-12 col-lg-6 col-12">
                     <h4>We provide high quality and cost effective services.</h4>
                     <div className="m-0">
                         <p className="pro">
@@ -19,7 +19,7 @@ const Progress = () => {
                     </p>
                     </div>
                 </div>
-                <div className="col mt-5 pt-5 col-sm-12 col-md-6 col-xs-12">
+                <div className="mt-5 pt-5 col-md-12 col-lg-6 col-12">
                     <ProgressBar
                         numero={92}
                         title="QUERY - 4 YEARS EXPERIENCE" />

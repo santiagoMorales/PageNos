@@ -1,8 +1,8 @@
 import React from 'react'
 
-const NumberCol = ({ number, title, pharr }) => (
+const NumberCol = ({ number, title, pharr, timeAnimation }) => (
 
-    <div className="col col-sm-6 col-md-3 col-xs border-right text-center">
+    <div className="col-12 col-sm-6 col-md-6 col-lg-3  border-right text-center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration={timeAnimation}>
         <div className="wrapper">
             <div className="box">
                 <h2 className="numTit">{number}</h2>

@@ -2,9 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as ifS from '@fortawesome/free-solid-svg-icons'
 
-const People = ({ image, job, name }) => {
+const People = ({ image, job, name, timeAnimation }) => {
     return (
-        <div className="col col-sm-4 col-md-4 col-xs-12 text-center">
+        <div className="col col-sm-4 col-md-4 col-12 text-center" data-aos="fade-left" data-aos-easing="linear" data-aos-duration={timeAnimation}>
             <div className="inner-wps">
                 <div className="wrapper">
                     <img src={image} alt="pro" className="wps-image"></img>

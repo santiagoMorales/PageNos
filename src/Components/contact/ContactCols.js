@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ContactCols = ({ icon, topic, content, link }) => (
-    <div className="col col-sm-6 col-md-3 col-xs-12 d-flex justify-content-center">
+    <div className="col col-sm-6 col-md-3 col-12 d-flex justify-content-center">
         <div className="wrapper">
             <div className="mb-4 d-flex justify-content-center">
                 <FontAwesomeIcon icon={icon} size="2x" color="#000" />

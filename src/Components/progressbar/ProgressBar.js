@@ -17,7 +17,7 @@ const ProgressBar = ({ numero, title }) => {
         <div>
             <span className="spro">{title} </span>
             <div className="progress prog ">
-                <div className="progress-bar progress-bar-striped bg-dark"
+                <div className="progress-bar progress-bar-striped "
                     ref={ref}
                     role="progressbar"
                     aria-valuenow="50"

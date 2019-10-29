@@ -1,74 +1,85 @@
 import React from 'react';
-import NavBar from './Components/NavBar'
-import About from './Components/About'
+import NavBar from './Components/navbar/NavBar'
+import About from './Components/about/About'
 import Video from './Components/Video'
-import Services from './Components/Services'
-import Counter from './Components/Counter'
-import ListButton from './Components/ListButton'
-import Portfolio from './Components/Portfolio'
-import NavImage from './Components/NavImage'
-import Progress from './Components/Progress'
-import Experience from './Components/Experiences'
+import Services from './Components/services/Services'
+import Counter from './Components/counter/Counter'
+import ListButton from './Components/listbutton/ListButton'
+import Portfolio from './Components/portfolio/Portfolio'
+import NavImage from './Components/portfolio/NavImage'
+import Progress from './Components/progressbar/Progress'
+import Experience from './Components//experiences/Experiences'
 import Numbers from './Components/Numbers'
 import Powerful from './Components/Powerful'
-import Creative from './Components/Creatuve'
+import Creative from './Components/creative/Creative'
 import Blog from './Components/blog/Blog'
 import Carousel from './Components/carousel/Carousel'
 import PeopleSay from './Components/wps/PeopleSay'
 import Form from './Components/form/Form'
 import Contact from './Components/contact/Contact'
 import Footer from './Components/footer/Footer'
-
+import { Parallax } from "react-parallax";
+import background1 from './background1.png'
+import bgTriang from './bgTriang.jpg'
+import back from './back.jpg'
 
 function App() {
     return (
         <div>
-            <section className="imagen" id="home">
+            <header>
                 <NavBar />
-                <div className="button d-flex justify-content-center">
-                    <button type="button" className="but btn btn-outline-dark rounded-circle ">&darr;</button>
-                </div>
-            </section>
+            </header>
+            <Parallax bgImage={background1} className="parallax1" strength={850} >
+
+                <section className="imagen" id="home">
+
+                </section>
+            </Parallax>
             <section id="about">
                 <About />
             </section>
-            <section className="tree">
-                <Video />
-            </section>
-            <section className="four pb-3" id="services">
+            <Parallax bgImage={bgTriang} className="parallax1" strength={500} >
+                <section className="tree">
+                    <Video />
+                </section>
+            </Parallax>
+            <section className="four pb-3" id="services" >
                 <Services />
             </section>
-            <section>
+            <section className="counter">
                 <Counter />
             </section>
             <section className="four">
                 <ListButton />
             </section>
-            <section id="work">
+            <section id="work" className="work">
                 <Portfolio />
             </section>
-            <section>
+            <section className="navIma">
                 <NavImage />
             </section>
-            <section>
-                <br></br>
+            <section className="progre">
                 <Progress />
             </section>
-            <section>
+            <section className="experience">
                 <Experience />
             </section>
             <section>
                 <Numbers />
             </section>
-            <section className="fond">
-                <Powerful />
-            </section>
+            <Parallax bgImage={back} className="parallax1" strength={500} >
+                <section >
+                    <Powerful />
+                </section>
+            </Parallax>
             <section className="secCreative" id="team">
                 <Creative />
             </section>
+            {/*
             <section className="blog" id="blog">
                 <Blog />
             </section>
+           */}
             <section className="carousel" id="clients">
                 <Carousel />
             </section>

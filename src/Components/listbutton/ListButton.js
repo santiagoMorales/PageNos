@@ -6,10 +6,10 @@ function ListButton() {
     return (
         <div className="container-fluid ">
             <div className="row ">
-                <div className="col col-sm-12 col-md-6 col-xs-12  ">
+                <div className="col-12 col-md-12 col-lg-6 col-sm-12" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="400">
                     <Botones />
                 </div>
-                <div className="col col-sm-12 col-md-6 col-xs-12 p-1 bac ">
+                <div className="col-12 col-md-12 col-lg-6 col-sm-12 p-1 bac" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="400">
                     <h1 className="tras">ok</h1>
                 </div>
             </div>

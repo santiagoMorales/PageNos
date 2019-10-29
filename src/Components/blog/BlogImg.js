@@ -4,7 +4,7 @@ const BlogImg = ({ img }) => (
     <li className="grid-item">
         <div className="img-grid">
             <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                <img className="imgG" src={img}></img>
+                <img className="imgG" src={img} alt="ok"></img>
             </a>
             <div className="blogC">
                 <a className="oneP" href="http://www.google.com" target="_blank" rel="noopener noreferrer" >

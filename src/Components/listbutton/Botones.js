@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as ifS from '@fortawesome/free-solid-svg-icons'
-import Oculto from './Oculto'
+import Oculto from '../Oculto'
 
 function Botones() {
     const [uno, changeUno] = useState(true);
@@ -48,53 +48,16 @@ function Botones() {
             changeTres(false);
         }
 
-    }/*
-    const click = ({ value }) => {
-        switch (value) {
-            case 1: if (uno) {
-                changeUno(false);
-                changeDos(false);
-                changeTres(false);
-            }
-            else {
-                changeUno(true);
-                changeDos(false);
-                changeTres(false);
-            }
-                break;
-            case 2: if (!dos) {
-                changeUno(false);
-                changeDos(true);
-                changeTres(false);
-            }
-            else {
-                changeUno(false);
-                changeDos(false);
-                changeTres(false);
-            }
-                break;
-            case 3: if (!tres) {
-                changeUno(false);
-                changeDos(false);
-                changeTres(true);
-            }
-            else {
-                changeUno(false);
-                changeDos(false);
-                changeTres(false);
-            }
-                break;
     }
-}*/
     return (
         <div className="container">
             <div className="row ren">
-                <div className="col">
+                <div className="col button-text">
                     <h3>We're small but impressive.</h3>
                     <h2> <strong>Hand crafted pixel perfect designs. </strong></h2>
 
                     <div className="list-group mt-5">
-                        <a onClick={clickUno} value="uno" className="list-group-item list-group-item-action m-1">
+                        <a onClick={clickUno} value="uno" className="list-group-item list-group-item-action m-1" href="#!">
                             <div>
                                 <span className="num"> 01 </span>
                                 <span className="tx">
@@ -104,7 +67,7 @@ function Botones() {
                             </div>
                         </a>
                         {uno ? <Oculto /> : null}
-                        <a onClick={clickDos} className="list-group-item list-group-item-action  m-1 ">
+                        <a onClick={clickDos} className="list-group-item list-group-item-action  m-1 " href="#!">
                             <div>
                                 <span className="num" > 02 </span>
                                 <span className="tx">We are ready to start now</span>
@@ -113,7 +76,7 @@ function Botones() {
 
                         </a>
                         {dos ? <Oculto /> : null}
-                        <a onClick={clickTres} className="list-group-item list-group-item-action  m-1 ">
+                        <a onClick={clickTres} className="list-group-item list-group-item-action  m-1 " href="#!">
                             <div>
                                 <span className="num" >  03 </span>
                                 <span className="tx">We deliver the highest quality</span>

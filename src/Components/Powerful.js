@@ -4,7 +4,7 @@ import PowerFulIcons from './PowetFulIcons';
 
 function Powerful() {
     return (
-        <div className="container pt-5 pb-5">
+        <div className="container pt-5 pb-5" data-aos="zoom-in">
             <div className="wrapper">
                 <div className="row pt-5 d-flex justify-content-center">
                     <h1 className="powerTi">Powerful Website Builder</h1>
@@ -15,15 +15,19 @@ function Powerful() {
                 <div className="row pt-5 pb-5 row-fluid">
                     <PowerFulIcons
                         icon={ifS.faPencilAlt}
+                        timeAnimation="200"
                     />
                     <PowerFulIcons
                         icon={ifS.faTools}
+                        timeAnimation="450"
                     />
                     <PowerFulIcons
                         icon={ifS.faOm}
+                        timeAnimation="700"
                     />
                     <PowerFulIcons
                         icon={ifS.faCut}
+                        timeAnimation="950"
                     />
                 </div>
             </div>

@@ -5,17 +5,17 @@ import * as ifS from '@fortawesome/free-solid-svg-icons'
 function Experinces() {
     return (
         <div>
-            <div className="container-fluid mt-5 ">
+            <div className="container-fluid ">
                 <div className="row">
-                    <div className="exp col col-sm-12 col-md-6 col-xs-12">
-                        <div className="backEx d-flex align-items-center pl-5 pr-5  col col-sm-12 col-md-6 col-xs-12 ">
+                    <div className="exp col-12 col-md-12 col-lg-6 col-sm-12 " data-aos="fade-right">
+                        <div className="backEx d-flex align-items-center pl-5 pr-5 text-center" >
                             <FontAwesomeIcon className=" ico" icon={ifS.faQuoteLeft} size="5x" color="white" />
                             <h6 className="seis">
                                 We design brand, digital experience & marketing campaigns that engage the right customers.
                             </h6>
                         </div>
                     </div>
-                    <div className="ex col col-sm-12 col-md-6 col-xs-12">
+                    <div className="ex col-12 col-md-12 col-lg-6 col-sm-12" data-aos="fade-left">
                         <div className="wrapper dw">
                             <span className="sdw">
                                 We create premium designs and technology
